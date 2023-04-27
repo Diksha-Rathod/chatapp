@@ -11,6 +11,7 @@
       }
       socket.emit("newuser", username);
       uname = username;
+      document.getElementById("name").innerHTML = uname;
       app.querySelector(".join-screen").classList.remove("active");
       app.querySelector(".chat-screen").classList.add("active");
     });
